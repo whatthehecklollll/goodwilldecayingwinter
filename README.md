@@ -37,26 +37,26 @@ local GuiCommands = {"InfClip","InfAmmo","Godmode","OneShot","NoCooldown","InfAu
 
 
 local Toggles = {
-    Godmode = false;
+    Godmode = true;
     InfRun = true;
-    AntiDebuff = false;
+    AntiDebuff = true;
     Dispenser = false;
-    NoCooldown = false;
+    NoCooldown = true;
     GrabAmmo = false;
-    VirusBlock = false;
+    VirusBlock = true;
     OneShot = false;
     SilentAim = false;
-    InfAmmo = false;
-    InfClip = false;
+    InfAmmo = true;
+    InfClip = true;
     AntiRecoil = false;
     AntiFallDamage = false;
     SuperRun = false;
-    NoHunger = false;
-    AutoParry = false;
-    KillAura = false;
+    NoHunger = true;
+    AutoParry = true;
+    KillAura = true;
     AutoKill = false;
     GrenadeRain = false;
-    InfAux = false;
+    InfAux = true;
 }
 
 
@@ -3440,96 +3440,6 @@ if _G.Code1 ~= nil and _G.Code2 ~= nil then
         Icon = "rbxassetid://2541869220";
         Duration = 7;
     })
-print([[
-
-COMMANDS CAN BE DONE AS /e command OR :command
-
-:godmode - Regens you when you take damage. (Won't save you from dynamite)
-:ungodmode -- Turns off godmode
-
-:nodebuff - Blocks all status effects. Moral, burning, bleeding, broken limbs, etc
-:unnodebuff - Turns off no-debuff
-
-:nocooldown - Removes all ability cooldowns (F key, assuming you have a perk equipped) (Also gives you inf auxiliary, which is the C key)
-:cooldown - Sets your cooldowns back to normal
-
-:AMMOTYPE NUMBER - sets your stash of AMMOTYPE to NUMBER (:light 50) (shells 20)
-:FOODTYPE NUMBER - sets your stash of FOODTYPE to NUMBER (:mre 20) (:water 5) (:beans 60) (:cola 200)
-
-:heal - Heals you, and removes status effects.
-:cleareffects - Clears all status effects and debuffs
-
-:stopvirus - halts your virus progression
-:resetvirus - resets your current virus progression (will not revert stages)
-
-:oneshot - enemies you hit will die after one hit
-:unoneshot - turns off oneshot
-
-:silentaim - makes it so you always hit the enemy closest to your mouse
-:unsilentaim - turns off silent aim
-
-:infmag - makes your mags bottomless
-:uninfmag - makes the weapon you're currently holding no longer have a bottomless mag
-:infreserve - sets all your ammo reserves to 900, and keeps them there. !!!!!!DO NOT GO OVER 1K!!!!!!
-:uninfreserve - disables infinite reserve ammo, your ammo reserves will stay at 900 though
-
-:norecoil - stops your camera from shaking
-:unnorecoil - turns off no recoil
-
-:nofalldamage - counters fall damage
-:unnofalldamage - uncounters fall damage
-
-:superrun - enables super run
-:unsuperrun - disables super run
-
-:nohunger - makes your hunger and thirst bar last indefinitely
-:unnohunger - removes no hunger
-:fill - fills your hunger and thirst bar
-
-:autoparry - automatically counters all incoming melee attacks
-:unautoparry - turns off autoparry
-
-:killaura - turns killaura on (kills all enemies within a certain distance)
-:killaura NUMBER - sets the kill radius for killaura to NUMBER (default is 30)
-:unkillaura - turns off killaura
-
-:killenemies - kills every enemy that's currently alive
-:killenemies NUMBER - kills every enemies within NUMBER studs of you
-
-:backpack - Gives you a backpack (gives you 2 more inventory slots)
-
-:spawn WEAPONNAME - gives you WEAPONNAME (cannot be dropped) (guns require an empty slot)
-:weaponnames - prints all the available weapon names in the dev console
-
-:infaux - Gives you infinite auxiliary equipment (Activated with C Key)
-:uninfaux - Turns off infaux
-
-:settrap TRAPNAME - sets the trap that gets placed when you press the U key
-
-:uses NUMBER - sets the uses / magazine of your current item to NUMBER
-
-:cig - gives you a cigarette
-:uncig - frees you of your nicotine addiction
-
-N Key: Heal and remove effects
-M Key: Remove effects
-U Key: Place set trap (use :settrap TRAPNAME to change the trap set with this key)
-T Key: Access game & Goodwill GUI
-
-L Key: Toggle super run
-- Key: Lower super run speed
-+ Key: Increase super run speed
-
-
-!! HOLD T TO ACCESS THE GUI (FEATURES IN THE GOODWILL, ESP, AND WEAPONRY TABS) !!
-
-- Toggle features in the GOODWILL tab
-- Toggle ESP elements in the ESP tab
-- Customize your held weapon's stats in the WEAPONRY tab
-t
-uploaded to toxic nea main's repository ;)
-
-]])
 else
     game.StarterGui:SetCore("SendNotification", {
         Title = 'FAILED';
