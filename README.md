@@ -3282,7 +3282,7 @@ game.Players.LocalPlayer.CharacterAdded:Connect(function(character)
     repeat wait() until game.Players.LocalPlayer.PlayerGui.mainHUD.HealthFrame:FindFirstChild("Statuses")
     local FunnyPlace = getrenv()._G
     GrabEssentials()
-    if game.PlaceId ~= 9880062154 and not game.Workspace:FindFirstChild("HoldoutDecor") then
+    if not game.Workspace:FindFirstChild("HoldoutDecor") then
         repeat 
             local Continue = false
             if game.Players.LocalPlayer.PlayerGui:FindFirstChild("mainHUD") and game.Players.LocalPlayer.PlayerGui.mainHUD:FindFirstChild("HealthFrame") and game.Players.LocalPlayer.PlayerGui.mainHUD.HealthFrame:FindFirstChild("Statuses") then
@@ -3328,7 +3328,7 @@ repeat wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("mainHUD")
 repeat wait() until game.Players.LocalPlayer.PlayerGui.mainHUD:FindFirstChild("HealthFrame")
 repeat wait() until game.Players.LocalPlayer.PlayerGui.mainHUD.HealthFrame:FindFirstChild("Statuses")
 
-if game.PlaceId ~= 9880062154 and not game.Workspace:FindFirstChild("HoldoutDecor") then
+if not game.Workspace:FindFirstChild("HoldoutDecor") then
     repeat 
         local Continue = false
         if game.Players.LocalPlayer.PlayerGui:FindFirstChild("mainHUD") and game.Players.LocalPlayer.PlayerGui.mainHUD:FindFirstChild("HealthFrame") and game.Players.LocalPlayer.PlayerGui.mainHUD.HealthFrame:FindFirstChild("Statuses") then
